@@ -37,8 +37,7 @@
         const resultSpan = document.getElementById('js-result').querySelector('span');
 
         playButton.addEventListener('click', function (event) {
-            event.preventDefault(); // Prevent form submission (page refresh)
-
+            event.preventDefault();
             const min = 0;
             const max = parseInt(rangeInput.value, 10);
             const randomNum = generateRandomNumber(min, max);
